@@ -153,30 +153,27 @@ export default class Composer {
 
     updateDOF(delta) {
         this.raycaster.setFromCamera(this.screenCenter, this.camera);
-        const intersects = this.raycaster.intersectObject(this.world.terrain.mesh, true);
+        const intersects = this.raycaster.intersectObject(this.world.model.mesh, true);
 
-        if (intersects.length > 0 && this.camera.position.y < 15) {
-            this.dofPass.enabled = true;
+        if (intersects.length > 0) {
             this.dofPass.materialBokeh.uniforms['focus'].value =
                 THREE.MathUtils.lerp(
                     this.dofPass.materialBokeh.uniforms['focus'].value,
                     intersects[0].distance,
                     0.1
                 );
-        } else {
-            this.dofPass.enabled = false;
         }
     }
 
     update() {
-        // const delta = this.experience.time.delta;
+        const delta = this.experience.time.delta;
 
-        // if (this.dofPass) {
-        //     this.frameCount++;
-        //     if (this.frameCount % this.updateInterval === 0) {
-        //         this.updateDOF(delta);
-        //     }
-        // }
+        if (this.dofPass) {
+            this.frameCount++;
+            if (this.frameCount % this.updateInterval === 0) {
+                this.updateDOF(delta);
+            }
+        }
 
         this.composer?.render();
     }

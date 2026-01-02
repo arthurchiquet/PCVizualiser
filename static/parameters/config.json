@@ -1,6 +1,6 @@
 {
   "scene": {
-    "backgroundColor": "#b5b5b5",
+    "backgroundColor": "#000000",
     "fogNear": 10,
     "fogFar": 1000
   },
@@ -124,16 +124,16 @@
     "bokehPass": {
       "focus": 0,
       "aperture": 0.005,
-      "maxblur": 0
+      "maxblur": 0.2
     },
     "vignettePass": {
       "offset": 0.43,
       "darkness": 2.25
     },
     "bloomPass": {
-      "strength": 0.3,
-      "radius": 1.2,
-      "threshold": 0.9
+      "strength": 1.25,
+      "radius": 1.59,
+      "threshold": 0.2
     }
   },
   "info": [

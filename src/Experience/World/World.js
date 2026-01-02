@@ -10,7 +10,7 @@ export default class World {
     constructor() {
         this.model = new Model()
         this.environment = new Environment()
-        this.htmlComponents = new HtmlComponents()
+        // this.htmlComponents = new HtmlComponents()
         // this.highlightMesh = new HighlightMesh()
         // this.pickingMesh = new PickingMesh()
         // this.content = new Content()

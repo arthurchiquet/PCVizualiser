@@ -21,7 +21,6 @@ export default class Model {
 
     setPLYMesh() {
         const geometry = this.resources.items.model
-        console.log(geometry)
         if (!geometry) return console.warn('Le PLY n’a pas été chargé')
 
         // Créer le PointsMaterial

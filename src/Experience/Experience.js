@@ -124,7 +124,6 @@ export default class Experience {
 
     playIntro() {
         this.camera.playIntro()
-        this.world.htmlComponents.playIntro()
     }
 
     destroy() {
