@@ -1,0 +1,146 @@
+{
+  "scene": {
+    "backgroundColor": "#b5b5b5",
+    "fogNear": 10,
+    "fogFar": 1000
+  },
+  "camera": {
+    "introDuration": 0.2,
+    "position": {
+      "x": 0,
+      "y": 80,
+      "z": 0
+    },
+    "fov": 20,
+    "near": 1,
+    "far": 200,
+    "maxPolarAngle": 0.85,
+    "enableDamping": true,
+    "dampingFactor": 0.1,
+    "minDistance": 5,
+    "maxDistance": 80,
+    "target": {
+      "x": 0,
+      "y": 0,
+      "z": 0
+    },
+    "sections": {
+      "logo": {
+        "position": {
+          "x": 0,
+          "y": 60,
+          "z": 0
+        },
+        "target": {
+          "x": 0.01,
+          "y": 0,
+          "z": 0.01
+        }
+      },
+      "carte": {
+        "position": {
+          "x": 0,
+          "y": 22,
+          "z": 0
+        },
+        "target": {
+          "x": 0,
+          "y": 0,
+          "z": -0.01
+        }
+      },
+      "services": {
+        "position": {
+          "x": -10,
+          "y": 7,
+          "z": 0
+        },
+        "target": {
+          "x": -10,
+          "y": 0,
+          "z": -0.01
+        }
+      },
+      "process": {
+        "position": {
+          "x": 10,
+          "y": 7,
+          "z": 0
+        },
+        "target": {
+          "x": 10,
+          "y": 0,
+          "z": -0.01
+        }
+      },
+      "apropos": {
+        "position": {
+          "x": 0,
+          "y": 7,
+          "z": 10
+        },
+        "target": {
+          "x": -0.01,
+          "y": 0,
+          "z": 10
+        }
+      },
+      "contact": {
+        "position": {
+          "x": 0,
+          "y": 7,
+          "z": -10
+        },
+        "target": {
+          "x": -0.01,
+          "y": 0,
+          "z": -10
+        }
+      }
+    }
+  },
+  "environment": {
+    "ambientLight": {
+      "color": "rgb(255,255,255)",
+      "intensity": 4
+    }
+  },
+  "model": {
+    "scale": 1.195
+  },
+  "terrainMaterial": {
+    "displacementScale": 3,
+    "emissive": "#ffffff",
+    "emissiveIntensity": 0,
+    "highlightAlpha": 1,
+    "highlightColor": "#ffffff"
+  },
+  "composer": {
+    "filmPass": {
+      "intensity": {
+        "value": 1
+      }
+    },
+    "bokehPass": {
+      "focus": 0,
+      "aperture": 0.005,
+      "maxblur": 0
+    },
+    "vignettePass": {
+      "offset": 0.43,
+      "darkness": 2.25
+    },
+    "bloomPass": {
+      "strength": 0.3,
+      "radius": 1.2,
+      "threshold": 0.9
+    }
+  },
+  "info": [
+    "<h3>{{nom}}</h3>",
+    "<p> Surface <strong>{{surface}} ca</strong></p>",
+    "<p> Altitude <strong>{{altitude}} m</strong></p>",
+    "<p> Pente <strong>{{pente}} %</strong></p>",
+    "<p> Exposition <strong>{{orientation}}</strong></p>"
+  ]
+}

@@ -1,0 +1,587 @@
+{
+  "#5198ea": {
+    "nom": "LES CRÉMONTS",
+    "commune": "51287",
+    "altitude": "217.0",
+    "exposition": "191.0",
+    "pente": "23.0",
+    "surface": "39118",
+    "orientation": "Sud"
+  },
+  "#a153e6": {
+    "nom": "LES MENIDRES",
+    "commune": "51287",
+    "altitude": "196.0",
+    "exposition": "162.0",
+    "pente": "11.0",
+    "surface": "12723",
+    "orientation": "Sud"
+  },
+  "#ecb762": {
+    "nom": "LES PATARDS L'ABBÉ",
+    "commune": "51287",
+    "altitude": "169.0",
+    "exposition": "143.0",
+    "pente": "17.0",
+    "surface": "5012",
+    "orientation": "Sud-Est"
+  },
+  "#ea7e80": {
+    "nom": "LES BASSES COYÈRES",
+    "commune": "51287",
+    "altitude": "156.0",
+    "exposition": "153.0",
+    "pente": "15.0",
+    "surface": "24539",
+    "orientation": "Sud-Est"
+  },
+  "#9d2de2": {
+    "nom": "LA RUELLE AUX VACHES",
+    "commune": "51287",
+    "altitude": "NULL",
+    "exposition": "NULL",
+    "pente": "NULL",
+    "surface": "192",
+    "orientation": "NULL"
+  },
+  "#e66ea6": {
+    "nom": "LE CUGNIOT",
+    "commune": "51287",
+    "altitude": "162.0",
+    "exposition": "142.0",
+    "pente": "15.0",
+    "surface": "6072",
+    "orientation": "Sud-Est"
+  },
+  "#96ea8b": {
+    "nom": "LES VORIVALS",
+    "commune": "51287",
+    "altitude": "104.0",
+    "exposition": "118.0",
+    "pente": "9.0",
+    "surface": "39706",
+    "orientation": "Sud-Est"
+  },
+  "#1d9ce1": {
+    "nom": "LES MALADRIES",
+    "commune": "51287",
+    "altitude": "133.0",
+    "exposition": "129.0",
+    "pente": "7.0",
+    "surface": "22475",
+    "orientation": "Sud-Est"
+  },
+  "#2be48e": {
+    "nom": "LES TERRES DES VORIVALS",
+    "commune": "51287",
+    "altitude": "93.0",
+    "exposition": "160.0",
+    "pente": "5.0",
+    "surface": "160",
+    "orientation": "Sud"
+  },
+  "#5967e5": {
+    "nom": "LES HAUTES PRIÈRES",
+    "commune": "51287",
+    "altitude": "175.0",
+    "exposition": "111.0",
+    "pente": "14.0",
+    "surface": "28626",
+    "orientation": "Est"
+  },
+  "#c73bea": {
+    "nom": "SOUS LES CLOS",
+    "commune": "51287",
+    "altitude": "143.0",
+    "exposition": "129.0",
+    "pente": "16.0",
+    "surface": "65806",
+    "orientation": "Sud-Est"
+  },
+  "#e988d9": {
+    "nom": "TUILEAUX",
+    "commune": "51287",
+    "altitude": "192.0",
+    "exposition": "241.0",
+    "pente": "10.0",
+    "surface": "3587",
+    "orientation": "Sud-Ouest"
+  },
+  "#53cf7c": {
+    "nom": "LES TAHUS",
+    "commune": "51287",
+    "altitude": "217.0",
+    "exposition": "137.0",
+    "pente": "20.0",
+    "surface": "9067",
+    "orientation": "Sud-Est"
+  },
+  "#46dea6": {
+    "nom": "LES BEURYS",
+    "commune": "51287",
+    "altitude": "230.0",
+    "exposition": "137.0",
+    "pente": "19.0",
+    "surface": "89543",
+    "orientation": "Sud-Est"
+  },
+  "#7d7fdb": {
+    "nom": "LES NOËLS CRÉMONTS",
+    "commune": "51287",
+    "altitude": "202.0",
+    "exposition": "219.0",
+    "pente": "14.0",
+    "surface": "24337",
+    "orientation": "Sud-Ouest"
+  },
+  "#a5cf7e": {
+    "nom": "LE PRÉ JAUME",
+    "commune": "51287",
+    "altitude": "201.0",
+    "exposition": "142.0",
+    "pente": "10.0",
+    "surface": "28505",
+    "orientation": "Sud-Est"
+  },
+  "#5ee324": {
+    "nom": "LES PETITS PRÉS",
+    "commune": "51287",
+    "altitude": "107.0",
+    "exposition": "168.0",
+    "pente": "11.0",
+    "surface": "25778",
+    "orientation": "Sud"
+  },
+  "#73ca79": {
+    "nom": "LES BASSES CÔTES",
+    "commune": "51287",
+    "altitude": "133.0",
+    "exposition": "184.0",
+    "pente": "20.0",
+    "surface": "7469",
+    "orientation": "Sud"
+  },
+  "#d3493f": {
+    "nom": "LE GROS BUISSON",
+    "commune": "51287",
+    "altitude": "123.0",
+    "exposition": "198.0",
+    "pente": "7.0",
+    "surface": "39096",
+    "orientation": "Sud"
+  },
+  "#5cda95": {
+    "nom": "LES BUTTES",
+    "commune": "51287",
+    "altitude": "237.0",
+    "exposition": "118.0",
+    "pente": "18.0",
+    "surface": "71810",
+    "orientation": "Sud-Est"
+  },
+  "#df4f78": {
+    "nom": "LES BAS CHAILLOIS",
+    "commune": "51287",
+    "altitude": "131.0",
+    "exposition": "122.0",
+    "pente": "7.0",
+    "surface": "88985",
+    "orientation": "Sud-Est"
+  },
+  "#b0ca63": {
+    "nom": "LA HUBARDE",
+    "commune": "51287",
+    "altitude": "209.0",
+    "exposition": "100.0",
+    "pente": "21.0",
+    "surface": "10927",
+    "orientation": "Est"
+  },
+  "#81ec3f": {
+    "nom": "LES NOËLS",
+    "commune": "51287",
+    "altitude": "183.0",
+    "exposition": "219.0",
+    "pente": "14.0",
+    "surface": "54686",
+    "orientation": "Sud-Ouest"
+  },
+  "#cc4857": {
+    "nom": "LES PATARDS",
+    "commune": "51287",
+    "altitude": "184.0",
+    "exposition": "152.0",
+    "pente": "15.0",
+    "surface": "23934",
+    "orientation": "Sud-Est"
+  },
+  "#23da3e": {
+    "nom": "LES JALOTTES DU FONDS",
+    "commune": "51287",
+    "altitude": "149.0",
+    "exposition": "178.0",
+    "pente": "11.0",
+    "surface": "57203",
+    "orientation": "Sud"
+  },
+  "#2772eb": {
+    "nom": "LES GUILLEMOINES",
+    "commune": "51287",
+    "altitude": "125.0",
+    "exposition": "258.0",
+    "pente": "5.0",
+    "surface": "826",
+    "orientation": "Ouest"
+  },
+  "#6cc7d9": {
+    "nom": "LES CADETTES",
+    "commune": "51287",
+    "altitude": "195.0",
+    "exposition": "141.0",
+    "pente": "10.0",
+    "surface": "22295",
+    "orientation": "Sud-Est"
+  },
+  "#1fcb4a": {
+    "nom": "LES HAUTES MALADRIES",
+    "commune": "51287",
+    "altitude": "149.0",
+    "exposition": "124.0",
+    "pente": "10.0",
+    "surface": "34472",
+    "orientation": "Sud-Est"
+  },
+  "#6a17d6": {
+    "nom": "LE NOYER DE L'ORME DU NORD",
+    "commune": "51287",
+    "altitude": "129.0",
+    "exposition": "92.0",
+    "pente": "7.0",
+    "surface": "65734",
+    "orientation": "Est"
+  },
+  "#ca642c": {
+    "nom": "LES PRIÈRES",
+    "commune": "51287",
+    "altitude": "154.0",
+    "exposition": "97.0",
+    "pente": "22.0",
+    "surface": "32410",
+    "orientation": "Est"
+  },
+  "#56d3b0": {
+    "nom": "DERRIÈRE LES MURS",
+    "commune": "51287",
+    "altitude": "173.0",
+    "exposition": "86.0",
+    "pente": "16.0",
+    "surface": "3781",
+    "orientation": "Est"
+  },
+  "#179dce": {
+    "nom": "LES BASSES PRIÈRES",
+    "commune": "51287",
+    "altitude": "126.0",
+    "exposition": "105.0",
+    "pente": "18.0",
+    "surface": "70736",
+    "orientation": "Est"
+  },
+  "#e4f038": {
+    "nom": "LES TERRES DES GARENNES",
+    "commune": "51287",
+    "altitude": "91.0",
+    "exposition": "200.0",
+    "pente": "10.0",
+    "surface": "24",
+    "orientation": "Sud"
+  },
+  "#d3ac50": {
+    "nom": "LES PLANTES",
+    "commune": "51287",
+    "altitude": "154.0",
+    "exposition": "126.0",
+    "pente": "18.0",
+    "surface": "15092",
+    "orientation": "Sud-Est"
+  },
+  "#d84fda": {
+    "nom": "LA CÔTE A LÈRY",
+    "commune": "51287",
+    "altitude": "127.0",
+    "exposition": "203.0",
+    "pente": "31.0",
+    "surface": "17742",
+    "orientation": "Sud-Ouest"
+  },
+  "#d842b3": {
+    "nom": "LES TERRES DES BASSES MALADRIES",
+    "commune": "51287",
+    "altitude": "123.0",
+    "exposition": "220.0",
+    "pente": "3.0",
+    "surface": "56267",
+    "orientation": "Sud-Ouest"
+  },
+  "#ed3db0": {
+    "nom": "LES COYÈRES DE LA BROUSSE",
+    "commune": "51287",
+    "altitude": "182.0",
+    "exposition": "178.0",
+    "pente": "15.0",
+    "surface": "17079",
+    "orientation": "Sud"
+  },
+  "#33becb": {
+    "nom": "LES BISSEMARLETTES",
+    "commune": "51287",
+    "altitude": "NULL",
+    "exposition": "NULL",
+    "pente": "NULL",
+    "surface": "139",
+    "orientation": "NULL"
+  },
+  "#becc76": {
+    "nom": "LES SELETTES",
+    "commune": "51287",
+    "altitude": "186.0",
+    "exposition": "186.0",
+    "pente": "14.0",
+    "surface": "63643",
+    "orientation": "Sud"
+  },
+  "#b737e9": {
+    "nom": "LES FÉTISANNES",
+    "commune": "51287",
+    "altitude": "NULL",
+    "exposition": "NULL",
+    "pente": "NULL",
+    "surface": "13517",
+    "orientation": "NULL"
+  },
+  "#e32c72": {
+    "nom": "LE BOURIN",
+    "commune": "51287",
+    "altitude": "163.0",
+    "exposition": "190.0",
+    "pente": "24.0",
+    "surface": "4546",
+    "orientation": "Sud"
+  },
+  "#8fc91a": {
+    "nom": "LES MALTOURNÉES",
+    "commune": "51287",
+    "altitude": "121.0",
+    "exposition": "92.0",
+    "pente": "8.0",
+    "surface": "39481",
+    "orientation": "Est"
+  },
+  "#7d61ca": {
+    "nom": "LES COYÈRES",
+    "commune": "51287",
+    "altitude": "173.0",
+    "exposition": "140.0",
+    "pente": "20.0",
+    "surface": "31324",
+    "orientation": "Sud-Est"
+  },
+  "#c8bd69": {
+    "nom": "LES BEURYS DU CHEMIN CREUX",
+    "commune": "51287",
+    "altitude": "229.0",
+    "exposition": "126.0",
+    "pente": "21.0",
+    "surface": "11658",
+    "orientation": "Sud-Est"
+  },
+  "#7844d8": {
+    "nom": "LE BOIS DES CRÉMONTS",
+    "commune": "51287",
+    "altitude": "233.0",
+    "exposition": "210.0",
+    "pente": "22.0",
+    "surface": "54927",
+    "orientation": "Sud-Ouest"
+  },
+  "#609fd3": {
+    "nom": "CAVE THOMAS",
+    "commune": "51287",
+    "altitude": "172.0",
+    "exposition": "261.0",
+    "pente": "17.0",
+    "surface": "27",
+    "orientation": "Ouest"
+  },
+  "#92da80": {
+    "nom": "LE CHAMP DU GUÉ",
+    "commune": "51287",
+    "altitude": "163.0",
+    "exposition": "124.0",
+    "pente": "12.0",
+    "surface": "11764",
+    "orientation": "Sud-Est"
+  },
+  "#d19b71": {
+    "nom": "LES NOËLS NORD",
+    "commune": "51287",
+    "altitude": "225.0",
+    "exposition": "194.0",
+    "pente": "23.0",
+    "surface": "47360",
+    "orientation": "Sud"
+  },
+  "#abd673": {
+    "nom": "LA CHOPINE",
+    "commune": "51287",
+    "altitude": "130.0",
+    "exposition": "234.0",
+    "pente": "8.0",
+    "surface": "17956",
+    "orientation": "Sud-Ouest"
+  },
+  "#8becd9": {
+    "nom": "LES HAUTS CHAILLOIS",
+    "commune": "51287",
+    "altitude": "149.0",
+    "exposition": "137.0",
+    "pente": "11.0",
+    "surface": "15557",
+    "orientation": "Sud-Est"
+  },
+  "#caa719": {
+    "nom": "LES MAGNIES",
+    "commune": "51287",
+    "altitude": "153.0",
+    "exposition": "82.0",
+    "pente": "13.0",
+    "surface": "40926",
+    "orientation": "Est"
+  },
+  "#8f80db": {
+    "nom": "LES BASSES MALADRIES",
+    "commune": "51287",
+    "altitude": "125.0",
+    "exposition": "140.0",
+    "pente": "4.0",
+    "surface": "27243",
+    "orientation": "Sud-Est"
+  },
+  "#62de60": {
+    "nom": "LA CURE",
+    "commune": "51287",
+    "altitude": "127.0",
+    "exposition": "185.0",
+    "pente": "5.0",
+    "surface": "19511",
+    "orientation": "Sud"
+  },
+  "#3861cb": {
+    "nom": "LA CÔTE AUX RENARDS",
+    "commune": "51287",
+    "altitude": "165.0",
+    "exposition": "217.0",
+    "pente": "15.0",
+    "surface": "13074",
+    "orientation": "Sud-Ouest"
+  },
+  "#ca61c3": {
+    "nom": "LA CÔTE A LÉRY-NORD",
+    "commune": "51287",
+    "altitude": "153.0",
+    "exposition": "189.0",
+    "pente": "33.0",
+    "surface": "17394",
+    "orientation": "Sud"
+  },
+  "#dd7ab2": {
+    "nom": "BACCHUS",
+    "commune": "51287",
+    "altitude": "179.0",
+    "exposition": "136.0",
+    "pente": "21.0",
+    "surface": "6053",
+    "orientation": "Sud-Est"
+  },
+  "#726ad4": {
+    "nom": "GRAIN D'ARGENT",
+    "commune": "51287",
+    "altitude": "178.0",
+    "exposition": "251.0",
+    "pente": "17.0",
+    "surface": "10228",
+    "orientation": "Ouest"
+  },
+  "#ef6e43": {
+    "nom": "LES PANATTES",
+    "commune": "51287",
+    "altitude": "218.0",
+    "exposition": "230.0",
+    "pente": "18.0",
+    "surface": "8996",
+    "orientation": "Sud-Ouest"
+  },
+  "#e8254c": {
+    "nom": "RINSILLONS",
+    "commune": "51287",
+    "altitude": "180.0",
+    "exposition": "205.0",
+    "pente": "13.0",
+    "surface": "286900",
+    "orientation": "Sud-Ouest"
+  },
+  "#cbc82d": {
+    "nom": "LE NOYER DE L'ORME DU MIDI",
+    "commune": "51287",
+    "altitude": "131.0",
+    "exposition": "136.0",
+    "pente": "7.0",
+    "surface": "42158",
+    "orientation": "Sud-Est"
+  },
+  "#5bd1cf": {
+    "nom": "LE PIGNON",
+    "commune": "51287",
+    "altitude": "152.0",
+    "exposition": "199.0",
+    "pente": "15.0",
+    "surface": "11323",
+    "orientation": "Sud"
+  },
+  "#cc77d5": {
+    "nom": "LES GARENNES",
+    "commune": "51287",
+    "altitude": "99.0",
+    "exposition": "262.0",
+    "pente": "27.0",
+    "surface": "38838",
+    "orientation": "Ouest"
+  },
+  "#de892e": {
+    "nom": "LE PRÉ JAUMES DES BOIS",
+    "commune": "51287",
+    "altitude": "211.0",
+    "exposition": "155.0",
+    "pente": "18.0",
+    "surface": "152072",
+    "orientation": "Sud-Est"
+  },
+  "#435ec9": {
+    "nom": "LES ESSARTS",
+    "commune": "51287",
+    "altitude": "141.0",
+    "exposition": "195.0",
+    "pente": "13.0",
+    "surface": "15388",
+    "orientation": "Sud"
+  },
+  "#11ecd6": {
+    "nom": "LES CHAILLOIS",
+    "commune": "51287",
+    "altitude": "142.0",
+    "exposition": "163.0",
+    "pente": "10.0",
+    "surface": "24336",
+    "orientation": "Sud"
+  }
+}

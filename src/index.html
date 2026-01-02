@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport"
+    content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no, viewport-fit=cover">
+  <title>PROFIIL | Cartographie immersive</title>
+  <link rel="stylesheet" href="./style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap"
+    rel="stylesheet">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Averia+Serif+Libre:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap"
+    rel="stylesheet">
+  <style>
+    :root {
+      --tp-base-background-color: hsla(0, 0%, 10%, 0.8);
+      --tp-base-shadow-color: hsla(0, 0%, 0%, 0.2);
+      --tp-button-background-color: hsla(0, 0%, 80%, 1.00);
+      --tp-button-background-color-active: hsla(0, 0%, 100%, 1);
+      --tp-button-background-color-focus: hsla(0, 0%, 95%, 1);
+      --tp-button-background-color-hover: hsla(0, 0%, 85%, 1);
+      --tp-button-foreground-color: hsla(0, 0%, 0%, 0.8);
+      --tp-container-background-color: hsla(0, 0%, 0%, 0.3);
+      --tp-container-background-color-active: hsla(0, 0%, 0%, 0.6);
+      --tp-container-background-color-focus: hsla(0, 0%, 0%, 0.5);
+      --tp-container-background-color-hover: hsla(0, 0%, 0%, 0.4);
+      --tp-container-foreground-color: hsla(0, 0%, 100%, 0.5);
+      --tp-groove-foreground-color: hsla(0, 0%, 0%, 0.2);
+      --tp-input-background-color: hsla(0, 0%, 0%, 0.3);
+      --tp-input-background-color-active: hsla(0, 0%, 0%, 0.6);
+      --tp-input-background-color-focus: hsla(0, 0%, 0%, 0.5);
+      --tp-input-background-color-hover: hsla(0, 0%, 0%, 0.4);
+      --tp-input-foreground-color: hsla(0, 0%, 100%, 0.5);
+      --tp-label-foreground-color: hsla(0, 0%, 100%, 0.5);
+      --tp-monitor-background-color: hsla(0, 0%, 0%, 0.3);
+      --tp-monitor-foreground-color: hsla(0, 0%, 100%, 0.3);
+    }
+  </style>
+</head>
+
+<body>
+  <canvas class="webgl"></canvas>
+  <nav class="navbar">
+    <div data-section="logo" class="logo nav">PROFIIL®</div>
+    <button class="burger">
+      ☰
+    </button>
+    <ul class="nav-links">
+      <li><button data-section="carte" class="nav">LA CARTE</button></li>
+      <li><button data-section="services" class="nav">SERVICES</button></li>
+      <li><button data-section="process" class="nav">PROCESS</button></li>
+      <li><button data-section="apropos" class="nav">À PROPOS</button></li>
+      <li><button data-section="contact" class="nav">CONTACT</button></li>
+    </ul>
+  </nav>
+  <div class="info"></div>
+  <div class="overlay"></div>
+  <div class="pointer" role="presentation">
+    <div class="pointer-circle"></div>
+  </div>
+  <script type="module" src="./script.js"></script>
+</body>
+
+</html>
