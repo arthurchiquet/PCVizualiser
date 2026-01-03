@@ -191,7 +191,7 @@ export default class Camera {
             position: this.cameraParams.sections.carte.position,
             target: this.cameraParams.sections.carte.target,
             duration: this.cameraParams.introDuration,
-            ease: "linear"
+            ease: "power2.inOut"
         });
     }
 

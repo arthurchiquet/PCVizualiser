@@ -1,6 +1,7 @@
 import * as THREE from 'three'
 import { GLTFLoader } from 'three/examples/jsm/loaders/GLTFLoader.js'
 import { PLYLoader } from 'three/addons/loaders/PLYLoader.js';
+import { PCDLoader } from 'three/addons/loaders/PCDLoader.js';
 import EventEmitter from './EventEmitter.js'
 
 export default class Resources extends EventEmitter {
@@ -25,6 +26,7 @@ export default class Resources extends EventEmitter {
         this.loaders.textureLoader = new THREE.TextureLoader()
         this.loaders.gltfLoader = new GLTFLoader()
         this.loaders.plyLoader = new PLYLoader()
+        this.loaders.pcdLoader = new PCDLoader()
         this.loaders.fileLoader = new THREE.FileLoader()
     }
 
@@ -65,6 +67,14 @@ export default class Resources extends EventEmitter {
             }
             else if (source.type === 'plyModel') {
                 this.loaders.plyLoader.load(
+                    source.path,
+                    file => this.sourceLoaded(source, file),
+                    undefined,
+                    err => this.sourceError(source, err)
+                )
+            }
+            else if (source.type === 'pcdModel') {
+                this.loaders.pcdLoader.load(
                     source.path,
                     file => this.sourceLoaded(source, file),
                     undefined,

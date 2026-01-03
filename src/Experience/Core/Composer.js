@@ -45,7 +45,6 @@ export default class Composer {
         this.addBloomPass();
         this.addFilmPass();
         // this.addDOFPass();
-        this.addNoisePass();
         this.addVignettePass();
         this.addGammaCorrectionPass();
     }
@@ -53,28 +52,6 @@ export default class Composer {
     addRenderPass() {
         this.renderPass = new RenderPass(this.scene, this.camera);
         this.composer.addPass(this.renderPass);
-    }
-
-    addNoisePass() {
-        const noiseShader = {
-            uniforms: { tDiffuse: { value: null }, amount: { value: 0.05 } },
-            vertexShader: `
-    varying vec2 vUv;
-    void main() { vUv = uv; gl_Position = projectionMatrix * modelViewMatrix * vec4(position,1.0); }
-  `,
-            fragmentShader: `
-    uniform sampler2D tDiffuse;
-    uniform float amount;
-    varying vec2 vUv;
-    void main() {
-      vec4 color = texture2D(tDiffuse, vUv);
-      float n = (fract(sin(dot(vUv.xy ,vec2(12.9898,78.233))) * 43758.5453) - 0.5) * amount;
-      gl_FragColor = vec4(color.rgb + n, color.a);
-    }
-  `
-        };
-        const noisePass = new ShaderPass(noiseShader)
-        this.composer.addPass(noisePass)
     }
 
     addBloomPass() {

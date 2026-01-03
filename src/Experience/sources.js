@@ -11,7 +11,7 @@ export default [
     },
     {
         name: 'model',
-        type: 'plyModel',
-        path: `/models/model.ply`
+        type: 'pcdModel',
+        path: `/models/model.pcd`
     }
 ]

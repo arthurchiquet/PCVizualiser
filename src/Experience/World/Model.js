@@ -13,40 +13,37 @@ export default class Model {
             this.debugFolder = this.debug.ui.addFolder({ title: 'Model', expanded: false })
         }
 
-        // Au lieu de setMesh directement, attendre le PLY
         if (this.resources.items.model) {
-            this.setPLYMesh()
+            this.setPCDMesh()
         }
     }
 
-    setPLYMesh() {
-        const geometry = this.resources.items.model
-        if (!geometry) return console.warn('Le PLY n’a pas été chargé')
+    setPCDMesh() {
 
-        // Créer le PointsMaterial
-        this.material = new THREE.PointsMaterial({
-            size: this.isMobile ? 0.05 : 3,
-            vertexColors: true,
-            sizeAttenuation: false
-        })
+        this.mesh = this.resources.items.model
 
-        this.mesh = new THREE.Points(geometry, this.material)
-
-        // Centrer le nuage
-        geometry.computeBoundingBox()
-        const center = geometry.boundingBox.getCenter(new THREE.Vector3())
+        // Centrer et scaler le nuage
+        const bbox = new THREE.Box3().setFromObject(this.mesh)
+        const center = bbox.getCenter(new THREE.Vector3())
         this.mesh.position.sub(center)
 
-        // Rotation si nécessaire
         this.mesh.rotation.x = -Math.PI / 2
-        this.mesh.scale.set(0.2, 0.2, 0.2);
+        this.mesh.scale.set(0.2, 0.2, 0.2)
 
+        // Ajuster le material pour contrôle taille, blending, vertexColors
+        this.mesh.material.size = this.isMobile ? 0.05 : 0.1
+        this.mesh.material.vertexColors = true
+        this.mesh.material.sizeAttenuation = true
+        this.mesh.material.blending = THREE.AdditiveBlending
+        this.mesh.material.transparent = true
+        this.mesh.material.depthWrite = false
+        this.mesh.material.color.setScalar(1.5)
 
         this.scene.add(this.mesh)
 
-        // // debug pour la taille
+        // Debug optionnel : modifier la taille en temps réel
         // if (this.debug?.active) {
-        //     this.debugFolder.add(this.material, 'size', 0.01, 1, 0.01)
+        //     this.debugFolder.add(this.mesh.material, 'size', 0.01, 1, 0.01)
         // }
     }
 
