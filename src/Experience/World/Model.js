@@ -31,6 +31,7 @@ export default class Model {
         this.mesh.scale.set(0.2, 0.2, 0.2)
 
         // Ajuster le material pour contrôle taille, blending, vertexColors
+        this.mesh.material.map = this.resources.items.mask
         this.mesh.material.size = this.isMobile ? 0.05 : 0.1
         this.mesh.material.vertexColors = true
         this.mesh.material.sizeAttenuation = true

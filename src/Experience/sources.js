@@ -13,5 +13,10 @@ export default [
         name: 'model',
         type: 'pcdModel',
         path: `/models/model.pcd`
+    },
+    {
+        name: 'mask',
+        type: 'texture',
+        path: `/textures/mask.png`
     }
 ]
