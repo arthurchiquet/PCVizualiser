@@ -2,6 +2,7 @@ import * as THREE from 'three'
 import { GLTFLoader } from 'three/examples/jsm/loaders/GLTFLoader.js'
 import { PLYLoader } from 'three/addons/loaders/PLYLoader.js';
 import { PCDLoader } from 'three/addons/loaders/PCDLoader.js';
+import { DRACOLoader } from 'three/examples/jsm/loaders/DRACOLoader.js'
 import EventEmitter from './EventEmitter.js'
 
 export default class Resources extends EventEmitter {
@@ -24,7 +25,17 @@ export default class Resources extends EventEmitter {
     // initialisation des loaders Three.js
     setLoaders() {
         this.loaders.textureLoader = new THREE.TextureLoader()
+
+        // --- DRACO ---
+        this.loaders.dracoLoader = new DRACOLoader()
+        this.loaders.dracoLoader.setDecoderPath('/draco/')
+        // ⬆️ dossier où se trouvent draco_decoder.js / .wasm
+
+        // --- GLTF ---
         this.loaders.gltfLoader = new GLTFLoader()
+        this.loaders.gltfLoader.setDRACOLoader(this.loaders.dracoLoader)
+
+        // --- Autres loaders ---
         this.loaders.plyLoader = new PLYLoader()
         this.loaders.pcdLoader = new PCDLoader()
         this.loaders.fileLoader = new THREE.FileLoader()

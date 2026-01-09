@@ -1,13 +1,15 @@
 import Environment from './Environment.js'
-import Content from './Content.js'
 import Model from './Model.js'
+import Model2 from './Model2.js'
 
 export default class World {
     constructor() {
         this.model = new Model()
         this.environment = new Environment()
-        // this.htmlComponents = new HtmlComponents()
-        // this.content = new Content()
+    }
+
+    update() {
+        // this.model.update()
     }
 
     destroy() {
@@ -15,8 +17,6 @@ export default class World {
         const modules = [
             this.model,
             this.environment,
-            this.htmlComponents,
-            this.content,
         ];
 
         modules.forEach(obj => {
@@ -25,7 +25,5 @@ export default class World {
 
         this.model = null;
         this.environment = null;
-        this.htmlComponents = null;
-        this.content = null;
     }
 }
