@@ -1,11 +1,10 @@
 import Environment from './Environment.js'
 import Model from './Model.js'
-import Model2 from './Model2.js'
 
 export default class World {
     constructor() {
-        this.model = new Model()
         this.environment = new Environment()
+        this.model = new Model()
     }
 
     update() {

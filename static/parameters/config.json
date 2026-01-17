@@ -2,10 +2,10 @@
   "scene": {
     "backgroundColor": "#000000",
     "fogNear": 0,
-    "fogFar": 100
+    "fogFar": 10000
   },
   "camera": {
-    "introDuration": 1,
+    "introDuration": 4,
     "position": {
       "x": 0,
       "y": 80,
@@ -13,7 +13,7 @@
     },
     "fov": 50,
     "near": 1,
-    "far": 200,
+    "far": 10000,
     "maxPolarAngle": 3.4159,
     "enableDamping": true,
     "dampingFactor": 0.2,
@@ -27,14 +27,14 @@
     "sections": {
       "carte": {
         "position": {
-          "x": 0,
-          "y": 13.71,
-          "z": 0
+          "x": 2.05,
+          "y": 2.62,
+          "z": -6.81
         },
         "target": {
-          "x": 0,
+          "x": -0.82,
           "y": 0,
-          "z": 0
+          "z": -1.05
         }
       }
     }

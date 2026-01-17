@@ -1,6 +1,6 @@
 import * as THREE from 'three'
 import Experience from '../Experience.js'
-import { OrbitControls } from 'three/examples/jsm/controls/OrbitControls.js'
+import { MapControls } from 'three/examples/jsm/controls/MapControls.js'
 import { gsap } from "gsap";
 
 export default class Camera {
@@ -27,7 +27,7 @@ export default class Camera {
 
     setInstance() {
         this.instance = new THREE.PerspectiveCamera(
-            this.cameraParams.fov,
+            this.isMobile? this.cameraParams.fov + 10 : this.cameraParams.fov,
             this.sizes.width / this.sizes.height,
             this.cameraParams.near,
             this.cameraParams.far
@@ -102,13 +102,61 @@ export default class Camera {
     }
 
     setControls() {
-        this.controls = new OrbitControls(this.instance, this.canvas)
-        this.controls.enableDamping = true
+        this.controls = new MapControls(this.instance, this.canvas)
+        this.controls.maxPolarAngle = this.cameraParams.maxPolarAngle
+        this.controls.enableDamping = this.cameraParams.enableDamping
+        this.controls.dampingFactor = this.cameraParams.dampingFactor
+        this.controls.minDistance = this.cameraParams.minDistance
+        this.controls.maxDistance = this.cameraParams.maxDistance
+
+        this.controls.target.set(
+            this.cameraParams.target.x,
+            this.cameraParams.target.y,
+            this.cameraParams.target.z,
+        )
+
+        // Debug
+        if (this.debug.active) {
+            this.debugFolder.addBinding(
+                this.controls, 'maxPolarAngle',
+                {
+                    label: 'maxPolarAngle',
+                    min: 0,
+                    max: Math.PI,
+                    step: 0.01
+                }
+            );
+
+            this.debugFolder.addBinding(
+                this.controls, 'dampingFactor',
+                {
+                    label: 'dampingFactor',
+                    min: 0.01,
+                    max: 0.3,
+                    step: 0.01
+                }
+            );
+
+            this.debugFolder.addBinding(this.controls.target, 'x', {
+                readonly: true,
+                label: 'Control X',
+            });
+
+            this.debugFolder.addBinding(this.controls.target, 'y', {
+                readonly: true,
+                label: 'Control Y',
+            });
+
+            this.debugFolder.addBinding(this.controls.target, 'z', {
+                readonly: true,
+                label: 'Control Z',
+            });
+        }
+
+        this.controls.update()
     }
 
     focus(params) {
-
-        const offset = this.isMobile ? 2 : 0;
 
         const cam = {
             posX: this.instance.position.x,
@@ -121,7 +169,7 @@ export default class Camera {
 
         gsap.to(cam, {
             posX: params.position.x,
-            posY: params.position.y + offset,
+            posY: params.position.y,
             posZ: params.position.z,
             tgtX: params.target.x,
             tgtY: params.target.y,
@@ -138,11 +186,7 @@ export default class Camera {
 
     playIntro() {
         this.focus({
-            position: {
-                x: 4.5,
-                y:4,
-                z:11
-            },
+            position: this.cameraParams.sections.carte.position,
             target: this.cameraParams.sections.carte.target,
             duration: this.cameraParams.introDuration,
             ease: "power2.inOut"

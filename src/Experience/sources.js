@@ -12,16 +12,11 @@ export default [
     {
         name: 'model',
         type: 'pcdModel',
-        path: `/models/model2.pcd`
-    },
-     {
-        name: 'model2',
-        type: 'gltfModel',
-        path: `/models/model.glb`
+        path: `/models/model18.pcd`
     },
     {
         name: 'mask',
         type: 'texture',
-        path: `/textures/mask.png`
+        path: `/textures/mask2.webp`
     }
 ]
