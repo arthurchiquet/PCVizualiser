@@ -12,7 +12,7 @@ export default [
     {
         name: 'model',
         type: 'pcdModel',
-        path: `/models/model18.pcd`
+        path: `/models/model13.pcd`
     },
     {
         name: 'mask',
